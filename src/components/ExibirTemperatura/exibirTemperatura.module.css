@@ -1,0 +1,70 @@
+.box {
+    width: 80vw;
+    height: 80vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: var(--cor-font);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 425px) {
+    .box{
+        height: 90vh;
+    }
+}
+
+.box h1{
+    font-size: 4rem;
+    margin: 1rem 0rem;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+}
+
+@media (max-width: 425px) {
+    .box h1{
+        font-size: 3rem;
+    }
+}
+
+.box h2{
+    font-weight: 200;
+    font-size: 2rem;
+    margin: 1rem 0rem;
+}
+
+@media (max-width: 425px) {
+    .box h2{
+        font-size: 1.5rem;
+    }
+}
+
+.box select{
+    font-family: var(--font-raleway);
+    background-color: transparent;
+    border: 1px solid var(--cor-font);
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    padding: .2rem 0rem;
+    color: var(--cor-font);
+    font-weight: lighter;
+}
+
+@media (max-width: 425px){
+    .box select{
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+.box select:focus{
+    outline: none;
+}
